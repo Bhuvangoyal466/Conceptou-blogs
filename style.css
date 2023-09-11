@@ -1,0 +1,321 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-family: "Roboto", sans-serif;
+}
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: #08e1ae;
+    background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+
+    /* background-image: url(nav.jpg);
+    background-size: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: 2px 2px 20px #8493bf;
+}
+
+.navbar img {
+    height: 100%;
+    width: 140px;
+}
+.name {
+    color: black;
+    font-size: 40px;
+    /* font-family: "Roboto", sans-serif; */
+    font-family: "Roboto Condensed", sans-serif;
+    text-decoration: none;
+}
+.name:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+    transition-duration: 0.25s;
+}
+.navbar p {
+    font-size: 30px;
+    color: black;
+}
+.main-content {
+    line-height: 40px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 60%;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+.main img {
+    height: 250px;
+    width: 35%;
+    border-radius: 20px;
+}
+.main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    z-index: -2;
+    background: linear-gradient(
+        to right,
+        rgb(182, 244, 146),
+        rgb(51, 139, 147)
+    );
+    /* background-image: url(luke-chesser-IGtutkXikuc-unsplash.jpg); */
+    background-size: cover;
+    margin-top: 100px;
+}
+.many-tiles {
+    height: 3600px;
+    width: 100%;
+    /* background-color: rgb(130, 235, 98); */
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: -10;
+    background-color: #dbf26e;
+    background-image: linear-gradient(
+        319deg,
+        #dbf26e 0%,
+        #61fa74 37%,
+        #1cfdd6 100%
+    );
+
+    /* background-image: url(vackground-com-_CHTcNpKU1I-unsplash.jpg);
+    background-size: cover; */
+}
+.tile {
+    /* background-color: #858dbe; */
+    /* background-image: url(codioful-formerly-gradienta-UF_wwDxI6uk-unsplash.jpg);
+    background-size: cover; */
+    height: 9%;
+    width: 70%;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    border: 2px solid black;
+    background-color: #3ee577;
+    background-image: linear-gradient(315deg, #3ee577 0%, #42fcdb 74%);
+    opacity: 0;
+    transform: translateY(40px); /* Move elements down initially */
+    transform: translateX(100px);
+    transition: opacity 0.5s linear, transform 0.5s linear;
+    z-index: 5;
+}
+
+.tile img {
+    height: 70%;
+    width: 40%;
+    border-radius: 10px;
+    margin: 30px;
+}
+.heading {
+    color: black;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    margin-right: 10px;
+    font-weight: 700;
+}
+.tile-content {
+    margin-right: 10px;
+    line-height: 30px;
+    font-size: 15px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+}
+.summing-up {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 500px;
+    width: 100%;
+    z-index: -2;
+    background: linear-gradient(
+        to right,
+        rgb(182, 244, 146),
+        rgb(51, 139, 147)
+    );
+}
+.heading {
+    font-size: 30px;
+    font-weight: 700;
+}
+.stephen {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.stephen img {
+    height: 200px;
+    width: 300px;
+    border-radius: 30px;
+}
+.stephen-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25%;
+    width: 90%;
+    line-height: 30px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: #2085c8; */
+    height: 70px;
+    width: 100%;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    background-image: url(footer.jpg);
+    background-size: cover;
+    background-color: #08e1ae;
+    background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+}
+@media (max-width: 660px) {
+    .navbar p {
+        display: none;
+    }
+}
+@media (max-width: 1000px) {
+    .main-content {
+        width: 80%;
+    }
+}
+@media (max-width: 745px) {
+    .main-content {
+        width: 96%;
+    }
+}
+@media (max-width: 1000px) {
+    .main img {
+        height: 200px;
+        width: 275px;
+        border-radius: 20px;
+    }
+}
+@media (max-width: 490px) {
+    .main-content {
+        height: 400px;
+    }
+    .main {
+        height: 700px;
+    }
+}
+@media (max-width: 325px) {
+    .main img {
+        height: 150px;
+        width: 200px;
+    }
+    .name {
+        font-size: 20px;
+    }
+}
+@media (max-width: 290px) {
+    .main {
+        height: 800px;
+    }
+}
+@media (max-width: 830px) {
+    .many-tiles {
+        height: 3000px;
+    }
+    .tile {
+        height: 8%;
+        width: 90%;
+    }
+    .heading {
+        font-size: 20px;
+    }
+}
+@media (max-width: 315px) {
+    .tile {
+        height: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    .many-tiles {
+        height: 5000px;
+    }
+    .tile img {
+        height: 30%;
+        width: 80%;
+    }
+    .tile-content {
+        margin: 10px;
+    }
+    .info {
+        height: 12%;
+    }
+    .info img {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .reality {
+        height: 14%;
+    }
+    .employment {
+        height: 14%;
+    }
+    .support {
+        height: 12%;
+    }
+    .summing-up {
+        height: 1400px;
+    }
+}
+@media (max-width: 300px) {
+    .stephen img {
+        height: 150px;
+        width: 200px;
+    }
+    #robot {
+        display: none;
+    }
+    .stephen-content {
+        height: 750px;
+    }
+    .summing-up {
+        height: 1200px;
+    }
+    .heading {
+        margin-top: 20px;
+    }
+    .stephen {
+        height: 20%;
+    }
+    .automation {
+        height: 12%;
+    }
+    .support {
+        margin-bottom: 50px;
+    }
+}
